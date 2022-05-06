@@ -1,4 +1,17 @@
-// import React, { useState } from 'react';
+import React from 'react';
+import About from './components/About';
+
+function App() {
+  return (
+    <div>
+      <main>
+        <About />
+      </main>
+    </div>
+  );
+}
+
+
 // import Nav from './components/Nav';
 // import About from './components/About';
 // import Gallery from './components/Gallery';
@@ -42,4 +55,4 @@
 //   );
 // }
 
-// export default App;
+export default App;
