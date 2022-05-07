@@ -1,38 +1,253 @@
-.App {
-  text-align: center;
+/* color variables for easier use */
+:root {
+  --gray: #e7dbe9e3;
+  --black: #000000;  
+  --yellow: #f1d177;
+  --purple: #581c58; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* set default for page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--purple)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* set overall body style */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--black);
+  background-color: var(--gray);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* header styling */
+header {
+  padding: 20px 35px 20px 0;
+  /* background-color: linear-gradient(--yellow, #fcba04); */
+  background-color: var(--yellow);
+  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+  z-index: 9999;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 4vw;
+  color: var(--yellow);
+  margin: 0;
+  background-color: var(--purple);
+  padding: 5px 1% 5px 6%;
+}
+
+/* remove text color change for visited link */
+header h1 a:visited {
+  color: var(--yellow);
+}
+
+/* navigation styling */
+header nav {
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+/* navigation text styling */
+header nav a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.4rem;
+  color: var(--purple);
+  text-decoration: underline;
+  transition: all 0.25s ease-in;
+}
+
+/* reactive to hover */
+header nav a:hover {
+  background: var(--purple);
+  background-size: 100% 100%;
+  color: var(--yellow);
+  text-shadow: none;
+}
+
+/* hero styling */
+.hero {
+  /* background-image: url("../images/birch.jpg"); */
+  background-color: var(--yellow);
+  height: 450px;
+  width:100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hero img {
+  padding: 0;
+  border: var(--purple) solid 5px;
+  margin-left: 2%;
+}
+
+.hero div {
+  flex: 0 0 50%;
+}
+
+.hero h2 {
+margin-right: 0;
+padding: 5px 10px;
+color: var(--purple);
+background-color: var(--yellow);
+display: inline;
+}
+
+/* overall main section styling */
+main {
+  margin: 20px auto 40px auto;
+  max-width: 88%;
+}
+
+/* begin styling of main page */
+.page-section {
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.page-section > h2 {
+  flex: 0 0 20%;
+  text-align: right;
+  border-right: 5px solid var(--purple);
+  padding-right: 15px;
+  font-size: 4vw;
+  line-height: 1.1; 
+}
+
+.page-section div {
+  flex: 0 0 77%;
+}
+
+.page-section p {
+  font-size: 20px;
+  padding: 0 30px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* begin styling of work section */
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex: 0 0 77%;
 }
 
-.App-link {
-  color: #61dafb;
+.work-text {
+  display: flex;
+  background-color: var(--purple);
+  min-height: 150px;
+  max-height: 150px;
+  align-items: flex-end;
+  border: 5px solid white;
+  text-decoration: none;
+  background-size: 150%;
+  background-position: center; 
+  opacity: 0.5;
+  flex-basis: calc(50% - 1em);
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  font-size: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* make first work box larger */
+.work-text:first-child {
+  min-height: 400px;
+  flex-basis: 100%;
+}
+
+/* make each work box reactive to hover */
+.work-text:hover {
+  opacity: 1.0;
+}
+
+.work-text div {
+  padding: 8px 10px;
+  color: var(--purple);
+  background-color: var(--yellow);
+}
+
+/* make name of link larger */
+.work-text h4 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* background images for work boxes */
+.surf {
+  background-image: url("./assets/IMG_7579.jpg");
+}
+
+.led {
+  background-image: url("./assets/table_with_food_top_view_900x700.jpg");
+}
+
+.refactor {
+  background-image: url("./assets/weather.jpg");   
+}
+
+/* .run-buddy {
+  background-image: url("./assets/letters1.jpg");   
+}
+
+.robot {
+  background-image: url("./assets/work.jpg");
+} */
+
+/* begin footer styling */
+.contact-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  font-size: 1.4rem;
+  text-decoration: none;
+  padding: 8px;   
+}
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+ .page-section > h2 {
+     font-size: 4vw;
+ }
+}
+
+@media screen and (max-width: 575px) {  
+     .contact-links {
+      font-size: 3vw;
   }
 }
+
+
+
