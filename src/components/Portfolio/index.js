@@ -24,7 +24,7 @@ function Portfolio(props) {
   ];
   return (
     <section class="page-section">
-      <h2 id="work">Work</h2>
+      <h2 id="work">Projects</h2>
       <div class="work-container">
         {projectArray.map((project) => {
           return <Project project={project} />;

@@ -1,9 +1,10 @@
 /* color variables for easier use */
 :root {
-  --gray: #e7dbe9e3;
-  --black: #000000;  
-  --yellow: #f1d177;
-  --purple: #581c58; 
+  --aqua: #b9faf8;
+  --purp4: #b8d0eb;
+  --purp3: #b298dc;  
+  --purp2: #a663cc;
+  --purple: #6f2dbd; 
 }
 
 /* set default for page */
@@ -11,21 +12,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--purple)
+  /* color: var(--purple) */
 }
 
 /* set overall body style */
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--black);
-  background-color: var(--gray);
+  background-color: #b9faf8;
 }
 
 /* header styling */
 header {
   padding: 20px 35px 20px 0;
   /* background-color: linear-gradient(--yellow, #fcba04); */
-  background-color: var(--yellow);
+  background-color: #a663cc;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
@@ -44,15 +45,16 @@ header {
 header h1 {
   font-weight: bold;
   font-size: 4vw;
-  color: var(--yellow);
+  color: var(--purp4);
   margin: 0;
   background-color: var(--purple);
   padding: 5px 1% 5px 6%;
+  text-shadow: 1px 1px black;
 }
 
 /* remove text color change for visited link */
 header h1 a:visited {
-  color: var(--yellow);
+  color: var(--purp4);
 }
 
 /* navigation styling */
@@ -67,23 +69,24 @@ header nav a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.4rem;
-  color: var(--purple);
+  color: var(--aqua);
   text-decoration: underline;
   transition: all 0.25s ease-in;
+  text-shadow: 1px 1px var(--purple)
 }
 
 /* reactive to hover */
 header nav a:hover {
-  background: var(--purple);
+  background: var(--purp3);
   background-size: 100% 100%;
-  color: var(--yellow);
+  color: var(--purple);
   text-shadow: none;
 }
 
 /* hero styling */
 .hero {
-  /* background-image: url("../images/birch.jpg"); */
-  background-color: var(--yellow);
+  background-image: url("./assets/birch.jpg");
+  background-color: var(--purp2);
   height: 450px;
   width:100%;
   background-size: cover;
@@ -96,6 +99,7 @@ header nav a:hover {
   position: relative;
   font-size: 18px;
   font-weight: bold;
+  border: var(--purple) solid 5px;
 }
 
 .hero img {
@@ -110,10 +114,11 @@ header nav a:hover {
 
 .hero h2 {
 margin-right: 0;
-padding: 5px 10px;
-color: var(--purple);
+padding: 1px 1px;
+color: var(--purp2);
 background-color: var(--yellow);
 display: inline;
+text-shadow: 1px 1px black;
 }
 
 /* overall main section styling */
@@ -133,6 +138,10 @@ main {
   align-items: stretch;
 }
 
+.page-section h2 {
+  color: var(--purple);
+  text-shadow: 1px 1px black;
+}
 .page-section > h2 {
   flex: 0 0 20%;
   text-align: right;
@@ -164,11 +173,11 @@ main {
 
 .work-text {
   display: flex;
-  background-color: var(--purple);
+  background-color: var(--aqua);
   min-height: 150px;
   max-height: 150px;
   align-items: flex-end;
-  border: 5px solid white;
+  border: 5px solid var(--purple);
   text-decoration: none;
   background-size: 150%;
   background-position: center; 
@@ -190,10 +199,13 @@ main {
   opacity: 1.0;
 }
 
+h4:hover {
+  color: var(--purp3)
+}
+
 .work-text div {
   padding: 8px 10px;
-  color: var(--purple);
-  background-color: var(--yellow);
+  color: var(--aqua);
 }
 
 /* make name of link larger */

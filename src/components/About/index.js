@@ -8,7 +8,7 @@ function About(props) {
       <section class="hero">
         <img
           src={picOfMe}
-          alt="Picture of me!"
+          alt="Heather Tamisiea"
           height={200}
           width={175}
         />
