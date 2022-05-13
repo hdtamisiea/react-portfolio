@@ -23,7 +23,7 @@ footer a:hover {
 
 textarea {
   height: 200px;
-  width: 600px;
+  width: 80vw;
   padding: 10px;
   border: 2px solid var(--light);
   margin-top: 20px;
@@ -60,7 +60,7 @@ input {
   margin: 10px 0;
   font-size: 1rem;
   padding: 0.25rem;
-  width: 600px;
+  width: 80vw;
   border: 1px solid var(--dark);
   outline: none;
   border-radius: 3px;
@@ -81,6 +81,13 @@ h4, span {
   text-shadow: 1px 1px black;
   padding: .25rem;
   margin-left: 20px;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+h3 {
+  text-decoration: underline;
 }
 
 /* set default for page */
@@ -129,6 +136,7 @@ header h1 {
   margin: 0;
   text-shadow: 1px 1px black;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* remove text color change for visited link */
@@ -159,7 +167,7 @@ header nav {
 
 .flex-row {
   display: flex;
-  flex-wrap: wrap;
+font-size: 1rem;
   list-style: none;
 }
 /* reactive to hover */
@@ -176,7 +184,7 @@ span:hover {
 .hero {
   background-image: url("./assets/heather-flower-14751328990B1.jpg"); 
   background-color: var(--black);
-  height: 450px;
+  /* height: 450px; */
   width:100%;
   background-size: cover;
   background-position: center;
@@ -232,6 +240,7 @@ main {
 main h2 {
   margin-bottom: 20px;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .page-section h2 {
@@ -252,13 +261,11 @@ main h2 {
 }
 
 .page-section div {
-
-  flex: 0 0 90%;
   width: 100%;
   background-size: cover;
   background-position: center;
   align-content: center;
-  align-items: flex-end;
+  /* align-items: flex-end; */
 }
 
 .page-section p {
@@ -273,15 +280,16 @@ main h2 {
 /* begin styling of work section */
 .work-container {
   display: flex;
-  flex-wrap: wrap;
-  flex-grow: 2;
   justify-content: center;
-  flex: 0 0 90%;
   width: 100%;
   background-size: cover;
   background-position: center;
   align-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+}
+
+.work-container a {
+  text-decoration: none;
 }
 
 .work-text {
@@ -289,7 +297,7 @@ main h2 {
   background-color: var(--aqua);
   min-height: 150px;
   max-height: 150px;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   border: 5px solid var(--light);
   text-decoration: none;
   background-size: 150%;
@@ -299,7 +307,9 @@ main h2 {
   margin: 0.5em;
   font-size: 0.7rem;
   border-radius: 2ch;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: flex-end;
+
 }
 
 header.nav {
@@ -314,7 +324,7 @@ header.nav {
 }
 
 /* make first work box larger */
-.work-text:first-child {
+.work-text.surf{
   min-height: 400px;
   flex-basis: 100%;
 }
@@ -338,6 +348,10 @@ h4:hover {
 .work-text h4 {
   font-size: 1.6rem;
   font-weight: bold;
+}
+
+ul {
+ padding-left: 50px;
 }
 
 /* background images for work boxes */
