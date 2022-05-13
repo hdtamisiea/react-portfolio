@@ -6,6 +6,9 @@ function Project(props) {
       <div>
         <h4>{props.project.title}</h4>
         <span>{props.project.tech}</span>
+        <div>
+        <a href={props.project.repo} class="repo">Click here to view GitHub Repo</a>
+        </div>
       </div>
     </a>
   );

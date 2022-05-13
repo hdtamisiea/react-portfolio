@@ -13,12 +13,12 @@
 }
 
 .fa-linkedin:before, .fa-stack-overflow:before, .fa-github:before {
-  color: var(--dark);
+  color: rgb(45, 163, 163);
   margin: 15px;
 }
 
 footer a:hover {
-  opacity: .75;
+  opacity: .50;
 }
 
 textarea {
@@ -98,6 +98,7 @@ body {
   background-color: var(--dark2);
   text-shadow: 1px 1px black;
   font-size: 1.5em;
+  align-items: center;
 }
 
 /* header styling */
@@ -224,16 +225,18 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
+  justify-content: center;
+  /* align-items: stretch; */
 }
 
 main h2 {
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .page-section h2 {
   color: var(--light);
+  font-weight: bold;
   text-shadow: 1px 1px black;
   font-size: 1em;
   padding: 20px;
@@ -249,7 +252,13 @@ main h2 {
 }
 
 .page-section div {
-  flex: 0 0 77%;
+
+  flex: 0 0 90%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  align-content: center;
+  align-items: flex-end;
 }
 
 .page-section p {
@@ -265,8 +274,14 @@ main h2 {
 .work-container {
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 2;
   justify-content: center;
-  flex: 0 0 77%;
+  flex: 0 0 90%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  align-content: center;
+  align-items: flex-end;
 }
 
 .work-text {
@@ -279,12 +294,16 @@ main h2 {
   text-decoration: none;
   background-size: 150%;
   background-position: center; 
-  opacity: 0.5;
-  flex-basis: calc(100% - 1em);
+  width: 100%;
   padding: 0 0 20px 0;
   margin: 0.5em;
   font-size: 0.7rem;
   border-radius: 2ch;
+  flex-direction: row;
+}
+
+header.nav {
+  font-size: 1rem;
 }
 
 #about {
@@ -302,7 +321,7 @@ main h2 {
 
 /* make each work box reactive to hover */
 .work-text:hover {
-  opacity: 1.0;
+  opacity: 0.75;
 }
 
 h4:hover {
@@ -341,10 +360,19 @@ h4:hover {
   background-position: bottom center;  
 }
 
+.password {
+  background-image: url("./assets/letters1.jpg");
+  background-position: bottom center;
+}
 .robot {
   background-image: url("./assets/budget.PNG");
-  background-position: bottom center
+  background-position: bottom center;
 } 
+
+.repo {
+  padding-left: 15px;
+  color:rgb(45, 163, 163);
+}
 
 /* begin footer styling */
 footer {
@@ -372,8 +400,7 @@ footer {
    text-align: center;
    justify-content: center;
  }
-
-
+ 
 }
 
 @media screen and (max-width: 575px) {  
@@ -388,6 +415,5 @@ footer {
     justify-content: center;
   }
 }
-
 
 
