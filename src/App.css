@@ -349,8 +349,7 @@ h4:hover {
   font-size: 1.6rem;
   font-weight: bold;
 }
-
-ul {
+.techused {
  padding-left: 50px;
 }
 
@@ -371,7 +370,7 @@ ul {
 
 .run-buddy {
   background-image: url("./assets/work.PNG"); 
-  background-position: bottom center;  
+  background-position: top-center;  
 }
 
 .password {
@@ -382,6 +381,10 @@ ul {
   background-image: url("./assets/budget.PNG");
   background-position: bottom center;
 } 
+
+div.work-text.robot, div.work-text.run-buddy {
+  background-position: bottom center;
+}
 
 .repo {
   padding-left: 15px;
