@@ -18,7 +18,6 @@ function About() {
           flexible career that will also provide opportunities to grow and
           excel.
         </h2>
-
       </section>
     </div>
   );

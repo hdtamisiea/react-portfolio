@@ -182,7 +182,9 @@ span:hover {
 
 /* hero styling */
 .hero {
-  background-image: url("./assets/heather-flower-14751328990B1.jpg"); 
+  background-image: url("./assets/gc2.jpg"); 
+  background-position: center top;
+  background-size: 100%;
   background-color: var(--black);
   /* height: 450px; */
   width:100%;
@@ -340,7 +342,6 @@ h4:hover {
 }
 
 .work-text div {
-  padding: 8px 10px;
   color: var(--light);
 }
 
@@ -370,11 +371,11 @@ h4:hover {
 
 .run-buddy {
   background-image: url("./assets/work.PNG"); 
-  background-position: top-center;  
+  background-position: right bottom;  
 }
 
 .password {
-  background-image: url("./assets/letters1.jpg");
+  background-image: url("./assets/lock2.jpg");
   background-position: bottom center;
 }
 .robot {
@@ -389,6 +390,11 @@ div.work-text.robot, div.work-text.run-buddy {
 .repo {
   padding-left: 15px;
   color:rgb(45, 163, 163);
+  font-size: 1rem;
+}
+
+.repo:hover {
+  opacity: .75;
 }
 
 /* begin footer styling */

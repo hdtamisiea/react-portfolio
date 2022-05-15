@@ -44,8 +44,7 @@ function Portfolio(props) {
       tech: "HTML/CSS/Javascript",
       repo: "https://github.com/hdtamisiea/password-generator",
       class: "work-text password",
-    }
-
+    },
   ];
   return (
     <section class="page-section">
