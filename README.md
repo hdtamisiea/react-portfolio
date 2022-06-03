@@ -1,3 +1,82 @@
+# React-Portfolio        
+  
+  [![License](https://img.shields.io/badge/License-MIT%20-blue.svg)](https://opensource.org/licenses/MIT)
+
+## Technologies
+
+ HTML, CSS, GIT, Bootstrap, Javascript, NodeJS, ReactJS
+
+## Description
+
+This portfolio was created with a bootstrapped create-react-app.
+
+## Table of Contents (Optional)
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Features](#features)
+- [How to Contribute](#how-to-contribute)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+
+No installation instructions given.
+
+## Usage
+
+![Landing Page View](src/assets/page.PNG)
+
+View walkthrough video here:
+No video provided.
+
+Deployed site can be viewed at: 
+[https://hdtamisiea.github.io/react-portfolio/]
+
+Provide any instructions and/or examples for use:
+No instructions or examples provided.
+
+## Credits
+
+Collaborators:
+
+Repo owner is sole contributor.
+
+Third party assets requiring attribution:
+
+No third-party assets utilized.
+
+Tutorials or other reference material:
+
+No links provided.
+
+## License
+
+[MIT](https://opensource.org/licenses)<br>
+
+Click above to view terms and conditions of all open source licenses.
+
+## Features
+
+No additional features provided.
+
+## How to Contribute
+
+If contributions are welcome, instructions will be listed here: 
+No information on contributions has been provided.
+
+## Tests
+
+No test information provided.
+
+## Questions
+
+My GitHub profile can be viewed at https://github.com/hdtamisiea 
+
+Please send questions via email: hdfair@gmail.com
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
