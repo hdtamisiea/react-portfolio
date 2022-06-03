@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.690fdcbb.css",
+    "main.js": "/react-portfolio/static/js/main.8098e338.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/Heather.jpg": "/react-portfolio/static/media/Heather.6e2bb75cc4ef188cec2f.jpg",
+    "static/media/galaxy.jpg": "/react-portfolio/static/media/galaxy.7979a5cc28e5e1d25a02.jpg",
+    "static/media/table_with_food_top_view_900x700.jpg": "/react-portfolio/static/media/table_with_food_top_view_900x700.1b452a92af6b55619b9b.jpg",
+    "static/media/weather.jpg": "/react-portfolio/static/media/weather.b1c8d75bfe0520829fb7.jpg",
+    "static/media/gc2.jpg": "/react-portfolio/static/media/gc2.a637e62aa9e1194513a3.jpg",
+    "static/media/work.PNG": "/react-portfolio/static/media/work.53c7cc98ec2695cd7b3b.PNG",
+    "static/media/IMG_7579.jpg": "/react-portfolio/static/media/IMG_7579.b271b34a769f9f041694.jpg",
+    "static/media/lock2.jpg": "/react-portfolio/static/media/lock2.5d1861673da9270bc3db.jpg",
+    "static/media/budget.PNG": "/react-portfolio/static/media/budget.6074407bb8809adc5b58.PNG",
+    "index.html": "/react-portfolio/index.html",
+    "main.690fdcbb.css.map": "/react-portfolio/static/css/main.690fdcbb.css.map",
+    "main.8098e338.js.map": "/react-portfolio/static/js/main.8098e338.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.690fdcbb.css",
+    "static/js/main.8098e338.js"
+  ]
+}
