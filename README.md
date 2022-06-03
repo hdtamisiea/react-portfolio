@@ -27,7 +27,7 @@ No installation instructions given.
 
 ## Usage
 
-![Landing Page View](/assets/page.PNG)
+![Landing Page View](src/assets/page.PNG)
 
 View walkthrough video here:
 No video provided.
