@@ -4,6 +4,13 @@ import Project from "../Project";
 function Portfolio(props) {
   const projectArray = [
     {
+      link: "https://book-space-app.herokuapp.com/",
+      title: "BookSpace",
+      tech: "React/GraphQL/Apollo",
+      repo: "https://github.com/hdtamisiea/BookSpace",
+      class: "work-text book",
+    },
+    {
       link: "https://pet-fetcher.herokuapp.com/",
       title: "Pet Fetcher",
       tech: "JavaScript/Handlebars/CSS",

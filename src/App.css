@@ -326,7 +326,7 @@ header.nav {
 }
 
 /* make first work box larger */
-.work-text.surf{
+.work-text.book{
   min-height: 400px;
   flex-basis: 100%;
 }
@@ -355,6 +355,11 @@ h4:hover {
 }
 
 /* background images for work boxes */
+
+.book {
+  background-image: url("./assets/galaxy.jpg");
+}
+
 .surf {
   background-image: url("./assets/IMG_7579.jpg");
 }
